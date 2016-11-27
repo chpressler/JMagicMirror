@@ -1,0 +1,6 @@
+{
+  "name": "Raspimirror",
+  "tagline": "Java FX Application for Magic Mirror ",
+  "body": "###the idea\r\nraspimirror is a Java FX based Application to run on a small computer (i.e. Raspberry PI) in combination with an LCD Monitor behind a two way mirror to build a magic mirror. The Application will work together with [raspiremote](https://github.com/chpressler/raspiremote) and can be controlled remotely, especially through voice control.\r\n\r\n###Authors and Contributors\r\n\r\ninitiated by @chpressler. if you want to contribute please contact me\r\n\r\n###Support or Contact\r\ncoming soon...\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
