@@ -1,6 +1,5 @@
 package io.github.chpressler.jmagicmirror;
 
-import com.sun.webkit.CursorManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Cursor;
@@ -8,8 +7,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-
-import java.net.URL;
 
 public class Main extends Application {
 
@@ -20,6 +17,18 @@ public class Main extends Application {
 
         Scene scene = new Scene(root, 300, 275, Color.BLACK);
         scene.setCursor(Cursor.NONE);
+
+//        GridPane gridpane = new GridPane();
+//        gridpane.setPadding(new Insets(5));
+//        gridpane.setHgap(10);
+//        gridpane.setVgap(10);
+//
+//        Label label = new Label("Label");
+//        GridPane.setHalignment(label, HPos.CENTER);
+//        gridpane.add(label, 0, 0);
+
+        //root.getChildren().add(gridpane);
+
         primaryStage.setScene(scene);
 
         primaryStage.setFullScreen(true);
