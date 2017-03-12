@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane stylesheets="/jmm.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.chpressler.jmagicmirror.Controller">
+    <children>
+        <!-- stylesheets="/jmm.css" -->
+        <GridPane layoutY="-1.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="102.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="98.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints  prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints  prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label id="date" fx:id="date" rotate="-90.0" styleClass="label" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <Label id="rate" fx:id="rate" rotate="-90.0" styleClass="label" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <Label id="time" fx:id="time" rotate="-90.0" styleClass="time" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <Label id="meridiem" fx:id="meridiem" rotate="-90.0" styleClass="time" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label id="day" fx:id="day" rotate="-90.0" styleClass="label" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <Label id="weather" fx:id="weather" rotate="-90.0" styleClass="label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

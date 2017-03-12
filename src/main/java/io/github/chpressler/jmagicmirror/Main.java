@@ -1,36 +1,32 @@
 package io.github.chpressler.jmagicmirror;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Cursor;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
+
 public class Main extends Application {
 
+    @FXML
+    private Label time;
+
     @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/sample.fxml"));
+    public void start(Stage primaryStage) throws Exception {
+
+        Parent root = FXMLLoader.load(getClass().getResource("/jmm.fxml"));
         primaryStage.setTitle("JMagicMirror");
 
-        Scene scene = new Scene(root, 300, 275, Color.BLACK);
+        Scene scene = new Scene(root, 0, 0, Color.BLACK);//new Scene(root, 300, 275, Color.BLACK);
         scene.setCursor(Cursor.NONE);
-
-//        GridPane gridpane = new GridPane();
-//        gridpane.setPadding(new Insets(5));
-//        gridpane.setHgap(10);
-//        gridpane.setVgap(10);
-//
-//        Label label = new Label("Label");
-//        GridPane.setHalignment(label, HPos.CENTER);
-//        gridpane.add(label, 0, 0);
-
-        //root.getChildren().add(gridpane);
+        //scene.getStylesheets().add(getClass().getResource("/jmm.css").toExternalForm());
 
         primaryStage.setScene(scene);
-
         primaryStage.setFullScreen(true);
         primaryStage.setMaximized(true);
 
