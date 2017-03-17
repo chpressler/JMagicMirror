@@ -1,0 +1,58 @@
+.main {
+    -fx-background-color: #000000;
+}
+
+.label {
+    -fx-font-size: 30px;
+    /*-fx-font-weight: bold;*/
+    -fx-text-fill: #ffffff;
+    /*-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );*/
+}
+
+.label_small {
+    -fx-font-size: 18px;
+    -fx-text-fill: #ffffff;
+    /*-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );*/
+}
+
+.time {
+    -fx-font-size: 90px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.SUNNY {
+  -fx-graphic: url("./images/sun.png");
+}
+
+.CLOUDY {
+  -fx-graphic: url("./images/cloud.png");
+}
+
+.RAINY {
+  -fx-graphic: url("./images/rain.png");
+}
+
+.SNOW {
+  -fx-graphic: url("./images/snow.png");
+}
+
+.WINDY {
+  -fx-graphic: url("./images/wind.png");
+}
+
+.sun_cloud-icon {
+  -fx-graphic: url("./images/sun_cloud.png");
+}
+
+.sun_rain-icon {
+  -fx-graphic: url("./images/sun_rain.png");
+}
+
+.wind_cloud-icon {
+  -fx-graphic: url("./images/wind_cloud.png");
+}
+
+.FOGGY {
+  -fx-graphic: url("./images/fog.png");
+}

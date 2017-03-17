@@ -5,12 +5,16 @@ package io.github.chpressler.jmagicmirror.services.weather;
  */
 public class WeatherService {
 
-    enum TEMPUNIT {CENTIGRADE, FAHRENHEIT}
+    public enum TEMPUNIT {CENTIGRADE, FAHRENHEIT}
 
-    String getTemperature(TEMPUNIT unit, String location) {
-        return "";
+    public enum WEATHER {SUNNY, RAINY, CLOUDY, SNOW, FOGGY, WINDY}
+
+    public String getTemperature(TEMPUNIT unit, String location) {
+        return Long.toString(Math.round(Math.random() * 100))+"°";
     }
 
-
+    public WEATHER getWeather(String location) {
+        return WEATHER.values()[ (int)Math.round((Math.random()*5)) ];
+    }
 
 }

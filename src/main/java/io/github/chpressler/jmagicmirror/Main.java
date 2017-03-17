@@ -1,28 +1,33 @@
 package io.github.chpressler.jmagicmirror;
 
+import com.airhacks.afterburner.injection.Injector;
+import io.github.chpressler.jmagicmirror.services.stocks.StockService;
+import io.github.chpressler.jmagicmirror.services.weather.WeatherService;
 import javafx.application.Application;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Cursor;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class Main extends Application {
 
-    @FXML
-    private Label time;
-
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        Parent root = FXMLLoader.load(getClass().getResource("/jmm.fxml"));
-        primaryStage.setTitle("JMagicMirror");
+        Map<Object, Object> context = new HashMap<>();
+        context.put( "stockService", new StockService());
+        context.put( "weatherService", new WeatherService());
+        Injector.setConfigurationSource( context::get );
 
-        Scene scene = new Scene(root, 0, 0, Color.BLACK);//new Scene(root, 300, 275, Color.BLACK);
+        JMMView appView = new JMMView();
+        Scene scene = new Scene(appView.getView());
+
+        //Parent root = FXMLLoader.load(getClass().getResource("/io/github/chpressler/jmagicmirror/jmm.fxml"));
+        primaryStage.setTitle("JMagicMirror");
+        //Scene scene = new Scene(root, 0, 0, Color.BLACK);//new Scene(root, 300, 275, Color.BLACK);
         scene.setCursor(Cursor.NONE);
         //scene.getStylesheets().add(getClass().getResource("/jmm.css").toExternalForm());
 

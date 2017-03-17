@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <sshexec trust="true" password="raspberry" port="22" host="192.168.1.7" failonerror="false" command="mkdir --parents /home/pi/Projects/" username="pi" verbose="true"/>
+  <scp trust="true" file="/Users/christian/Documents/workspace/github/JMagicMirror/target/jmagicmirror-1.0-jar-with-dependencies.jar" todir="pi:raspberry@192.168.1.7:/home/pi/Projects/" port="22" failonerror="true" verbose="true"></scp>
+  <sshexec trust="true" password="raspberry" port="22" host="192.168.1.7" failonerror="false" command="java -jar /home/pi/Projects/jmagicmirror-1.0-jar-with-dependencies.jar" username="pi" verbose="true"/>
+</target>
+</project>
