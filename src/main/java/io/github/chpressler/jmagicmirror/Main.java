@@ -1,7 +1,7 @@
 package io.github.chpressler.jmagicmirror;
 
 import com.airhacks.afterburner.injection.Injector;
-import io.github.chpressler.jmagicmirror.services.stocks.StockService;
+import io.github.chpressler.jmagicmirror.services.stocks.FinanceService;
 import io.github.chpressler.jmagicmirror.services.weather.WeatherService;
 import javafx.application.Application;
 import javafx.scene.Cursor;
@@ -18,7 +18,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         Map<Object, Object> context = new HashMap<>();
-        context.put( "stockService", new StockService());
+        context.put( "stockService", new FinanceService());
         context.put( "weatherService", new WeatherService());
         Injector.setConfigurationSource( context::get );
 
