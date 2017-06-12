@@ -1,6 +1,7 @@
 package io.github.chpressler.jmagicmirror;
 
 import io.github.chpressler.jmagicmirror.services.stocks.FinanceService;
+import io.github.chpressler.jmagicmirror.services.weather.Weather;
 import io.github.chpressler.jmagicmirror.services.weather.WeatherService;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
@@ -96,18 +97,16 @@ public class JMMPresenter implements Initializable {
     }
 
     private void setRate() {
-        //TODO -> inject Service for exchange rate and retrieve usd eur rate value
         rate.setText(financeService.getExchangeRate("USD", "EUR"));
     }
 
     String icon = "";
     private void setWeather() {
-        //TODO -> inject Service for weather from configurable location
-        //use icons and temp. in label
+        Weather w =  weatherService.getWeather("60564");
         weather.getStyleClass().remove(icon);
-        icon = weatherService.getWeather("").toString();
+        icon = w.getCondition().toString();
         weather.getStyleClass().add(icon);
-        weather.setText(weatherService.getTemperature(WeatherService.TEMPUNIT.CENTIGRADE, ""));
+        weather.setText(w.getTemp());
     }
 
 }
