@@ -109,4 +109,16 @@ public class JMMPresenter implements Initializable {
         weather.setText(w.getTemp());
     }
 
+    private String testString;
+    public String getTestTsring() {
+        return testString;
+    }
+    public void setTestString(String s) {
+        testString = s;
+    }
+
+    public void test() {
+        System.out.println("works ... ");
+    }
+
 }

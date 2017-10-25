@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
+<?import javafx.scene.control.Button?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="800" styleClass="main" stylesheets="/io/github/chpressler/jmagicmirror/jmm.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.chpressler.jmagicmirror.JMMPresenter">
     <children>
         <!-- stylesheets="/jmm.css" -->
@@ -26,6 +27,7 @@
                 <Label id="meridiem" fx:id="meridiem" rotate="-90.0" styleClass="label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                 <Label id="day" fx:id="day" rotate="-90.0" styleClass="label" GridPane.columnIndex="0" GridPane.rowIndex="2" />
                 <Label id="weather" fx:id="weather" rotate="-90.0" styleClass="label_small" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
             </children>
         </GridPane>
     </children>

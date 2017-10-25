@@ -1,0 +1,130 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <title>National Weather Service Marine Forecast</title>
+        <meta name="title" content="National Weather Service Marine Forecast" />
+        <meta name="description" content="The National Weather Service is your best source for complete weather forecast and weather related information on the web!" />
+        <meta name="keywords" content="weather, local weather forecast, local forecast, weather forecasts, local weather, radar, fire weather, center weather service units, JetStream" />
+        <meta name="rating" content="General" />
+        <meta name="DC.publisher" content="NWS Southern Region HQ Fort Worth, Texas" />
+        <meta name="DC.contributor" content="NWS Southern Region HQ Fort Worth, Texas" />
+        <meta name="DC.rights" content="http://www.weather.gov/disclaimer.php" />
+        <meta name="DC.author" content="NWS Southern Region HQ Fort Worth, Texas (Dennis Cain and Leon Minton)" />
+        <meta name="robots" content="index,follow" />
+        <link rel="STYLESHEET" type="text/css" href="http://radar.weather.gov/main_041007.css" title="nws" />
+        <link rel="STYLESHEET" type="text/css" href="http://radar.weather.gov/print_041007.css" title="nws" media="print" />
+        <link href="/images/favicon.ico" rel="shortcut icon" />
+    </head>
+
+    <body class="nonav670">
+        <div class="header670">
+            <div class="rightalign">
+                <a href="http://weather.gov" class="noprint" title="Go to the NWS Homepage">weather.gov</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <span class="title_small">National Weather Service</span>
+            <br />
+            <br />
+            <span class="title_large">NWS Marine Forecast</span>
+        </div><!-- end of <div class="header670"> -->
+
+        <div id="noaalink">
+            <a href="http://www.noaa.gov"><img src="/images/wtf/noaalink.gif" alt="Go to the NOAA Homepage" width="80" height="80" /></a>
+        </div>
+
+        <div id="nwslink670">
+            <a href="http://www.nws.noaa.gov"><img src="/images/wtf/noaalink.gif" alt="NWS Homepage" width="80" height="80" /></a>
+        </div>
+
+        <div id="topnav670">
+            <label for="zipcity" class="yellow">Local weather forecast by &quot;City, St&quot; or zip code</label>
+            <form method="post" action="/zipcity.php">
+                <div class="searchinput">
+                    <input type="text" id="zipcity" name="inputstring" size="10" value="City, St" onfocus="if(this.value=='City, St')this.value='';" />
+                    <input type="submit" name="Go2" value="Go" />
+                </div>
+            </form>
+        </div><!-- end of <div id="topnav670"> -->
+
+        <!-- main content -->
+        <div id="mainnonav670">
+            <div id="content">
+                <span class="red">
+                    &nbsp;&nbsp;Cell Phone Weather/Marine Page URL: <a href="http://cell.weather.gov">cell.weather.gov</a>
+                </span><br>
+                <span class="red">
+                    &nbsp;&nbsp;PDA Weather/Marine Page URL: <a href="http://mobile.weather.gov">mobile.weather.gov</a>
+                </span><br>
+                <hr />
+                <br>
+                <br>&nbsp;Hazardous marine condition(s):<br>
+                <a href="/showsigmz.php?mz=LMZ741&product1=Gale+Warning"><span class="warn">&nbsp;Gale Warning</span></a><br>
+                <a href="/showsigmz.php?mz=LMZ741&product1=Hazardous+Weather+Outlook"><span class="warn">&nbsp;Hazardous Weather Outlook</span></a><br>
+                <div style="font-family: Fixed, monospace; font-size: 1.1em; padding-left: 20px; margin: 1em 0; white-space: pre-wrap;">
+                    &nbsp;
+                    &nbsp;LMZ740>742-242130-
+                    &nbsp;Winthrop Harbor to Wilmette Harbor-
+                    &nbsp;Wilmette Harbor to Northerly Island-
+                    &nbsp;Northerly Island to Calumet Harbor-
+                    <strong><font size="+1" color="#483D8B">&nbsp;847 AM CDT Tue Oct 24 2017</font></strong>
+                    &nbsp;
+                    <strong><font size="+1" color="#FF0000">&nbsp;SMALL CRAFT ADVISORY IN EFFECT UNTIL 1 PM CDT THIS AFTERNOON</font></strong>
+                    <strong><font size="+1" color="#FF0000">&nbsp;GALE WARNING IN EFFECT FROM 1 PM CDT THIS AFTERNOON THROUGH</font></strong>
+                    <strong><font size="+1" color="#FF0000">&nbsp;LATE TONIGHT</font></strong>
+                    &nbsp;
+
+                    <strong><font size="+1" color="#800000">&nbsp;REST OF TODAY</font></strong>
+                    &nbsp;West winds 15 to 25 kt increasing to 30 kt by
+                    &nbsp;midday, then becoming northwest gales to 35 kt this afternoon.
+                    &nbsp;Showers. Waves 2 to 4 ft building to 3 to 6 ft occasionally to 8
+                    &nbsp;ft.
+
+                    <strong><font size="+1" color="#800000">&nbsp;TONIGHT</font></strong>
+                    &nbsp;Northwest gales to 35 kt becoming west to 30 kt after
+                    &nbsp;midnight. Chance of showers in the evening. Waves 3 to 6 ft
+                    &nbsp;occasionally to 8 ft.
+
+                    <strong><font size="+1" color="#800000">&nbsp;WEDNESDAY</font></strong>
+                    &nbsp;West winds 15 to 20 kt becoming northwest 10 to 15
+                    &nbsp;kt in the afternoon. Slight chance of showers in the morning.
+                    &nbsp;Waves 2 to 4 ft subsiding to 1 to 3 ft in the afternoon.
+
+                    <strong><font size="+1" color="#800000">&nbsp;WEDNESDAY NIGHT</font></strong>
+                    &nbsp;Northwest winds 5 to 10 kt becoming southwest
+                    &nbsp;after midnight. Partly cloudy. Waves around 1 ft.
+                    &nbsp;
+                    &nbsp;$$
+                </div><hr /></div>
+
+            <div id="footer670">
+                <div id="footer670td2">
+                    U.S. Dept. of Commerce<br />
+                    NOAA National Weather Service<br />
+                    1325 East West Highway<br />
+                    Silver Spring, MD 20910<br />
+                    E-mail: <a href="mailto:w-nws.webmaster@noaa.gov">w-nws.webmaster@noaa.gov</a><br />
+                    Page last modified: Mar 4, 2014
+                </div>
+
+                <div id="footer670td3">
+                    <input type="button" value="Back to previous page" onclick="history.back()" />
+                </div>
+
+                <div id="footer670td4">
+                    <ul>
+                        <li><a href="http://www.weather.gov/disclaimer.php">Disclaimer</a></li>
+                        <li><a href="http://www.weather.gov/credits.php">Credits</a></li>
+                        <li><a href="http://www.weather.gov/glossary/">Glossary</a></li>
+                        <li><a href="http://weather.gov/privacy.php">Privacy Policy</a></li>
+                        <li><a href="http://www.weather.gov/admin.php">About Us</a></li>
+                        <li><a href="http://www.weather.gov/careers.php">Career Opportunities</a></li>
+                    </ul>
+                </div>
+                <div id="tag670">
+                    NATIONAL WEATHER SERVICE: <span class="italic">for Safety, for Work, for Fun</span> - FOR LIFE
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
